@@ -160,15 +160,14 @@ document.getElementById("add-student").addEventListener("click", function () {
     return;
   }
 
-  // Calculate grade based on the score
   let grade = getGrade(scoreInput);
 
-  // Create and store student object with grade
+ 
   let newstudent = {
     name: nameInput,
     class: classInput,
     score: scoreInput,
-    grade: grade, // Include grade in student object
+    grade: grade, 
   };
 
   arrStudents.push(newstudent);
@@ -188,7 +187,7 @@ document.getElementById("add-student").addEventListener("click", function () {
   nameDiv.style.width = "200px";
   nameDiv.textContent = nameInput;
 
-  // Create and style class div
+ 
   let classDiv = document.createElement("div");
   classDiv.style.color = "green";
   classDiv.style.width = "200px";
@@ -204,13 +203,13 @@ document.getElementById("add-student").addEventListener("click", function () {
   let gradeDiv = document.createElement("div");
   gradeDiv.style.color = "green";
   gradeDiv.style.width = "200px";
-  gradeDiv.textContent = grade; // Display grade
+  gradeDiv.textContent = grade; 
 
-  // Append all to student entry
+  // Append all to student entry----student entries is the div holding the larger student datat
   studentEntry.appendChild(nameDiv);
   studentEntry.appendChild(classDiv);
   studentEntry.appendChild(scoreDiv);
-  studentEntry.appendChild(gradeDiv); // Add grade to the entry
+  studentEntry.appendChild(gradeDiv); 
 
   // Append the whole student entry to the student list
   studentList.appendChild(studentEntry);
