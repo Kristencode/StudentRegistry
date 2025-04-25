@@ -112,7 +112,6 @@ addButton.style.cursor = "pointer";
 let allStudent = document.createElement("h2");
 allStudent.innerText = "Students Data";
 allStudent.style.color = "#4CAF50";
-// allStudent.style.margin = "30px auto";
 allStudent.style.textAlign = "center";
 allStudent.style.display = "block";
 
@@ -146,7 +145,7 @@ body.appendChild(studentList);
 
 
 // LOGIC STARTS HERE
-// Global student array
+//  student array
 let arrStudents = [];
 
 document.getElementById("add-student").addEventListener("click", function () {
@@ -183,7 +182,7 @@ document.getElementById("add-student").addEventListener("click", function () {
   studentEntry.style.border = "1px solid green";
   studentEntry.style.fontWeight = "bold";
 
-  // Create and style name div
+  
   let nameDiv = document.createElement("div");
   nameDiv.style.color = "green";
   nameDiv.style.width = "200px";
@@ -232,3 +231,6 @@ function getGrade(score) {
   return "F";
 }
 
+
+
+// Filter students
